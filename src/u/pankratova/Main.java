@@ -45,7 +45,7 @@ public class Main {
         int randomIndex = new Random().nextInt(number.length); //выбираем случайный индекс
         int randomNumber = number[randomIndex]; //получаем число по этому индексу
 
-        number = ArrayUtils.removeElement(number, randomNumber); //удаляем рандомное число из массива
+        number = ArrayUtils.removeElement(number, randomNumber); 
 
 
         /* Array with deleted number  */
@@ -60,7 +60,7 @@ public class Main {
         // перемешиваем массив
         Random random = new Random();
         for (int i = 0; i < number.length; i++) {
-            int index = random.nextInt(number.length); // или поставить тут random.nextInt(i+1)?
+            int index = random.nextInt(number.length); 
             int a = number[index];
             number[index] = number[i];
             number[i] = a;
